@@ -6,7 +6,7 @@ This project is using:
 - Tailwind CSS
 - Sanity.io -> For better Backend Managements
 - Vercel -> Deployment and CIDI
-- MotionFrames
+- FramerMotion
 
 
 ## Getting Started
