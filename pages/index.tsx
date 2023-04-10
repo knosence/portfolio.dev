@@ -1,19 +1,20 @@
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import type { NextPage } from 'next'
-import Head from 'next/head'
-
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import type { NextPage } from "next";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div className="
+    <div
+      className="
       bg-[rgb(36,36,36)] 
       text-white
       h-screen 
       snap-y 
       snap-mandatory 
       overflow-scroll 
-      z-0">
+      z-0"
+    >
       <Head>
         <title>NaDario&apos;s Portfolio</title>
         <meta name="description" content="The hub for all things NaDario!" />
@@ -37,5 +38,5 @@ export default function Home() {
 
       {/* Contact Me */}
     </div>
-  )
+  );
 }
