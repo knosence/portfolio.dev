@@ -22,7 +22,7 @@ export default function Hero({}: Props) {
       {/*TODO: Add a image properly*/}
       <img
         className="relative rounded-full h-32 w-32 mx-auto"
-        src="https://photos.app.goo.gl/ZpYc7ZLKd5SBdZ1w8"
+        src="https://lh3.googleusercontent.com/pw/AJFCJaVb3KUmYH0ZTVOnUjuJ_dgwNX_cQY-tU3HIdCpJyZMn6-eVGA9JVkufyrc1_Unad8jmN7EMp9_3lHegBBn450Fp4l1sJLn3ijI8l4ydPbSFPDIur3EsNjWqrMXe5-6x2dQVeF31Q0hEeXnBXkR4kSRl=w902-h953-s-no?authuser=0"
         alt=""
       />
       <h1>
