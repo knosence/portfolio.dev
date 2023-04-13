@@ -5,10 +5,7 @@ type Props = {};
 
 export default function About({ }: Props) {
   return (
-    <div
-      className="flex flex-col relative h-screen text-center md:text-left
-    md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
-    >
+    <div className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly">
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
@@ -22,20 +19,20 @@ export default function About({ }: Props) {
         md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
       />
 
-      <div className="space-y-10 px-0 md:px-10">
+      <div className="px-0 space-y-10 md:px-10">
         <h4 className="text-4xl font-semibold">
           Here is a{" "}
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
         <p className="text-sm">
-          Hi, I'm NaDario Seays, a software developer based out of Atlanta Ga
-          with a Bachelor's degree in Software Development and Analysis, as well
-          as a Master's in IT Project Management. In addition to my formal
-          education, I have also graduated from a prestigious coding bootcamp,
-          called SKilldstorm, which provided me with extensive hands-on
-          experience in Java, HTML, CSS, and JavaScript. I have worked with
-          various frameworks such as Spring, React, and Angular, and I'm
+          Hi, I am NaDario Seays, a software developer based out of Atlanta Ga
+          with a Bachelor&apos;s degree in Software Development and Analysis, as
+          well as a Master&apos;s in IT Project Management. In addition to my
+          formal education, I have also graduated from a prestigious coding
+          bootcamp, called SKilldstorm, which provided me with extensive
+          hands-on experience in Java, HTML, CSS, and JavaScript. I have worked
+          with various frameworks such as Spring, React, and Angular, and I am
           proficient in other technologies like SQL, AWS, and Docker. Beyond my
           academic and professional achievements, my passion for technology is
           reflected in my hobbies. For over a decade, I have been building and
