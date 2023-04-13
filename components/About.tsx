@@ -31,12 +31,13 @@ export default function About({ }: Props) {
           background
         </h4>
         <p className="text-sm">
-          Hello, I'm NaDario Seays, a highly skilled software developer based in
-          Atlanta, GA. I hold a Bachelor's degree in Software Development and
-          Analysis, as well as a Master's degree in IT Project Management.
-          Complementing my formal education, I have also successfully completed
-          a coding bootcamp called Skillstorm, where I gained extensive hands-on
-          experience in Java, HTML, CSS, and JavaScript.
+          Hello, I&apos;m NaDario Seays, a highly skilled software developer
+          based in Atlanta, GA. I hold a Bachelor&apos;s degree in Software
+          Development and Analysis, as well as a Master&apos;s degree in IT
+          Project Management. Complementing my formal education, I have also
+          successfully completed a coding bootcamp called Skillstorm, where I
+          gained extensive hands-on experience in Java, HTML, CSS, and
+          JavaScript.
           <br />
           <br />
           Beyond my academic and professional achievements, my passion for
