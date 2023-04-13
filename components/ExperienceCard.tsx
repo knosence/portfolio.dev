@@ -3,7 +3,7 @@ import React from "react";
 
 type Props = {};
 
-export default function ExperienceCard({}: Props) {
+export default function ExperienceCard({ }: Props) {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 
@@ -47,7 +47,7 @@ export default function ExperienceCard({}: Props) {
           Started Work... - Ended...
         </p>
 
-        <ul className="list-disc space-y-4 ml-5 text-lg">
+        <ul className="list-disc space-y-4 ml-5 text-base">
           <li>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
           </li>

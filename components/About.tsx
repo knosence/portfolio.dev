@@ -30,7 +30,7 @@ export default function About({ }: Props) {
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-sm">
+        <p className="text-base">
           Hello, I&apos;m NaDario Seays, a highly skilled software developer
           based in Atlanta, GA. I hold a Bachelor&apos;s degree in Software
           Development and Analysis, as well as a Master&apos;s degree in IT
