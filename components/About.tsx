@@ -5,7 +5,12 @@ type Props = {};
 
 export default function About({ }: Props) {
   return (
-    <div className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly"
+    >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
@@ -26,21 +31,23 @@ export default function About({ }: Props) {
           background
         </h4>
         <p className="text-sm">
-          Hi, I am NaDario Seays, a software developer based out of Atlanta Ga
-          with a Bachelor&apos;s degree in Software Development and Analysis, as
-          well as a Master&apos;s in IT Project Management. In addition to my
-          formal education, I have also graduated from a prestigious coding
-          bootcamp, called SKilldstorm, which provided me with extensive
-          hands-on experience in Java, HTML, CSS, and JavaScript. I have worked
-          with various frameworks such as Spring, React, and Angular, and I am
-          proficient in other technologies like SQL, AWS, and Docker. Beyond my
-          academic and professional achievements, my passion for technology is
-          reflected in my hobbies. For over a decade, I have been building and
-          repairing computers, 3D Printers and server labs. I use CAD software
-          to make 3D Models to print in my Printers and have a deep appreciation
-          for Linux.
+          Hello, I'm NaDario Seays, a highly skilled software developer based in
+          Atlanta, GA. I hold a Bachelor's degree in Software Development and
+          Analysis, as well as a Master's degree in IT Project Management.
+          Complementing my formal education, I have also successfully completed
+          a coding bootcamp called Skillstorm, where I gained extensive hands-on
+          experience in Java, HTML, CSS, and JavaScript.
+          <br />
+          <br />
+          Beyond my academic and professional achievements, my passion for
+          technology extends to my hobbies. For over a decade, I have been
+          actively involved in building and repairing computers, 3D printers,
+          and server labs. I utilize CAD software to create intricate 3D models
+          that I then print with my own printers. Additionally, I have a deep
+          appreciation for Linux and its versatility in various technology
+          applications.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }
