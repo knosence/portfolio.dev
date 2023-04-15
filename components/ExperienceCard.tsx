@@ -3,7 +3,7 @@ import React from "react";
 
 type Props = {};
 
-export default function ExperienceCard({ }: Props) {
+export default function ExperienceCard({}: Props) {
   return (
     <article
       className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 
@@ -29,17 +29,17 @@ export default function ExperienceCard({ }: Props) {
         <div className="flex space-x-2 my-2">
           <img
             className="w-10 h-10 rounded-full"
-            src="https://img.icons8.com/color/256/javascript.png"
+            src="/images/skills/js.png"
             alt=""
           />
           <img
             className="w-10 h-10 rounded-full"
-            src="https://img.icons8.com/color/256/javascript.png"
+            src="/images/skills/js.png"
             alt=""
           />{" "}
           <img
             className="w-10 h-10 rounded-full"
-            src="https://img.icons8.com/color/256/javascript.png"
+            src="/images/skills/js.png"
             alt=""
           />{" "}
         </div>
