@@ -2,10 +2,12 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import Link from "next/link";
+import Profile from "../public/images/profile.jpg";
+import Image from "next/image";
 
 type Props = {};
 
-export default function Hero({ }: Props) {
+export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: ["Hi👋, I'm NaDario Seays", "Welcome to my Portfolio"],
     loop: true,
@@ -16,10 +18,12 @@ export default function Hero({ }: Props) {
     <div className="flex flex-col items-center justify-center h-screen space-y-8 text-center overflow-hidden">
       <BackgroundCircles />
       {/*TODO: Add a image properly*/}
-      <img
+      <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://lh3.googleusercontent.com/pw/AJFCJaVb3KUmYH0ZTVOnUjuJ_dgwNX_cQY-tU3HIdCpJyZMn6-eVGA9JVkufyrc1_Unad8jmN7EMp9_3lHegBBn450Fp4l1sJLn3ijI8l4ydPbSFPDIur3EsNjWqrMXe5-6x2dQVeF31Q0hEeXnBXkR4kSRl=w902-h953-s-no?authuser=0"
+        src={Profile}
         alt="My Profile Picture"
+        width={500}
+        height={500}
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
