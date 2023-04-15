@@ -1,4 +1,7 @@
 import React from "react";
+import Image from "next/image";
+import PortfolioProfile from "../public/images/portfolio-profile.png";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -14,17 +17,12 @@ function Projects({}: Props) {
       </h3>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
-        {projects.map((_project, i) => (
-          <div
+        {projects.map((project, i) => (
+          <motion.div
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center 
           justify-center p-20 md:p-44 h-schreen"
           >
-            <img
-              src="images/portfolio-profile.png"
-              alt="Picture of the author"
-              width={400}
-              height={400}
-            />
+            <Image src={PortfolioProfile} alt="Picture of the author" />
             <div className="space-y-10 px-0 md:px-10 max-w-6x1">
               <h4 className="text-4xl fold-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
@@ -38,7 +36,7 @@ function Projects({}: Props) {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
