@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import PortfolioProfile from "../public/images/portfolio-profile.png";
 
 type Props = {};
 
@@ -21,8 +19,8 @@ function Projects({}: Props) {
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center 
           justify-center p-20 md:p-44 h-schreen"
           >
-            <Image
-              src={PortfolioProfile}
+            <img
+              src="images/portfolio-profile.png"
               alt="Picture of the author"
               width={400}
               height={400}
