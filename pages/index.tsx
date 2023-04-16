@@ -60,9 +60,13 @@ export default function Home() {
       </section>
 
       <Link href="#hero">
-        <footer>
-          <div>
-            <img src="" alt="" />
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <img
+              className="h-20 w-20 filter grayscale hover:grayscale-0 cursor-pointer"
+              src="/images/Rf7eda97de5d2afb34651b658c84adf91(3).png"
+              alt=""
+            />
           </div>
         </footer>
       </Link>
