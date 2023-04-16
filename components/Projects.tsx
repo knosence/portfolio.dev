@@ -38,7 +38,7 @@ function Projects({}: Props) {
             <div className="space-y-10 px-0 md:px-10 max-w-6x1">
               <h4 className="text-4xl fold-semibold text-center">
                 <span className="underline decoration-[#815af5]/50">
-                  Case Study {i + 1} of {projects.length}:
+                  Case Study of {projects.length}:
                 </span>{" "}
                 UPS clone
               </h4>

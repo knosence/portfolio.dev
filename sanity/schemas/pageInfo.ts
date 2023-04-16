@@ -11,7 +11,7 @@ export default defineType({
       type: 'string',
     },
     {
-      name: 'role:',
+      name: 'role',
       title: 'Role',
       type: 'string',
     },
