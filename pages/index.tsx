@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,8 +18,13 @@ export default function Home() {
       h-screen 
       snap-y 
       snap-mandatory 
-      overflow-scroll 
-      z-0"
+      overflow-y-scroll
+      overflow-x-hidden
+      z-0 
+      scrollbar-thin
+      scrollbar-track-gray-400/20 
+      scrollbar-thumb-[#815af5]/80
+      "
     >
       <Head>
         <title>NaDario&apos;s Portfolio</title>
@@ -52,6 +58,14 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+
+      <Link href="#hero">
+        <footer>
+          <div>
+            <img src="" alt="" />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 }
