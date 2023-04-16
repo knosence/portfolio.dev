@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
+import Image from "next/image";
+import JsSkill from "../public/images/skills/js.png";
 
 type Props = {};
 
@@ -27,21 +29,9 @@ export default function ExperienceCard({}: Props) {
         </h4>
         <p className="font-bold text-2xl mt-1">SkillStorm</p>
         <div className="flex space-x-2 my-2">
-          <img
-            className="w-10 h-10 rounded-full"
-            src="/images/skills/js.png"
-            alt=""
-          />
-          <img
-            className="w-10 h-10 rounded-full"
-            src="/images/skills/js.png"
-            alt=""
-          />{" "}
-          <img
-            className="w-10 h-10 rounded-full"
-            src="/images/skills/js.png"
-            alt=""
-          />{" "}
+          <Image className="w-10 h-10 rounded-full" src={JsSkill} alt="" />
+          <Image className="w-10 h-10 rounded-full" src={JsSkill} alt="" />{" "}
+          <Image className="w-10 h-10 rounded-full" src={JsSkill} alt="" />{" "}
         </div>
         <p className="uppercase py-5 text-gray-300">
           Started Work... - Ended...
