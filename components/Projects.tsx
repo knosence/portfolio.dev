@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-function Projects({}: Props) {
+function Projects({ }: Props) {
   const projects = [1, 2, 3, 4, 5];
   return (
     <motion.div
@@ -36,10 +36,8 @@ function Projects({}: Props) {
           />
           <div className="space-y-10 px-0 md:px-10 max-w-6x1">
             <h4 className="text-4xl fold-semibold text-center">
-              <span className="underline decoration-[#815af5]/50">
-                Case Study of {projects.length}:
-              </span>{" "}
-              UPS clone
+              <span className="underline decoration-[#815af5]/50"></span> UPS
+              clone
             </h4>
             <p className="text-lg text-center md:text-left">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis

@@ -5,11 +5,10 @@ import Link from "next/link";
 
 type Props = {};
 
-export default function Header({}: Props) {
+export default function Header({ }: Props) {
   return (
     <header
-      className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20
-      xl:items-center"
+      className="sticky top-0 z-20 flex items-start justify-between p-5 mx-auto max-w-7xl xl:items-center"
     >
       <motion.div
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
@@ -17,7 +16,6 @@ export default function Header({}: Props) {
         transition={{ duration: 1.5 }}
         className="flex flex-row items-center"
       >
-        {/* Social Icons */}
         <SocialIcon
           url="https://www.linkedin.com/in/nadario-seays/"
           fgColor="gray"
@@ -34,7 +32,7 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
       </motion.div>
-      <Link href="#contact">
+      {/* <Link href="#contact">
         <motion.div
           initial={{ x: 500, opacity: 0, scale: 0.5 }}
           animate={{ x: 0, opacity: 1, scale: 1 }}
@@ -48,11 +46,11 @@ export default function Header({}: Props) {
             bgColor="transparent"
           />
 
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          <p className="hidden text-sm text-gray-400 uppercase md:inline-flex">
             Get In Touch
           </p>
         </motion.div>
-      </Link>
+      </Link> */}
     </header>
   );
 }
