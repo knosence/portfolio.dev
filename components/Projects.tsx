@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import PortfolioProfile from "../public/images/portfolio-profile.png";
 import { motion } from "framer-motion";
 
 type Props = {};
@@ -8,7 +6,10 @@ type Props = {};
 function Projects({}: Props) {
   const projects = [1, 2, 3, 4, 5];
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full 
     justify-evenly mx-auto items-center z-0"
     >
@@ -18,11 +19,19 @@ function Projects({}: Props) {
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">
         {projects.map((i) => (
-          <motion.div
+          <div
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center 
-          justify-center p-20 md:p-44 h-schreen"
+          justify-center p-20 md:p-44 h-screen"
           >
-            <Image src={PortfolioProfile} alt="Picture of the author" />
+            <motion.img
+              initial={{ y: -300, opacity: 0 }}
+              transition={{ duration: 1.2 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              src="images/portfolio-profile.png"
+              alt="Picture of the author"
+              className="border border-gray-500 w-[auto] h-[300px]"
+            />
             <div className="space-y-10 px-0 md:px-10 max-w-6x1">
               <h4 className="text-4xl fold-semibold text-center">
                 <span className="underline decoration-[#F7AB0A]/50">
@@ -36,12 +45,12 @@ function Projects({}: Props) {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
               </p>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
 
       <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
-    </div>
+    </motion.div>
   );
 }
 

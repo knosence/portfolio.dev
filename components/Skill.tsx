@@ -15,6 +15,7 @@ function Skill({ directionLeft }: Props) {
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
         src="/images/skills/js.png"
         alt="js"
         className="rounded-full border border-gray-500 object-cover w-24 h-24 md:w-28 
