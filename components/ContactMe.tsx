@@ -18,7 +18,9 @@ function ContactMe({}: Props) {
     watch,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (formdata) => console.log(formdata);
+  const onSubmit: SubmitHandler<Inputs> = (formdata) => {
+    window.location.href = `mailto:nadario.adj@gmail.com?subject=${formdata.subject}&body=Hi, my name is ${formdata.name}. ${formdata.message} (${formdata.email})`;
+  };
   return (
     <div
       className="h-screen flex relative flex-col text-center 
@@ -32,22 +34,22 @@ function ContactMe({}: Props) {
         <h4 className="text-4xl font-semibold text-center">
           If you have any questions or would like to work together,
           <br />
-          <span className="underline decoration-[#F7AB0A]/50">
-            Let's get in touch!
+          <span className="underline decoration-[#815af5]/50">
+            Let&apos;s get in touch!
           </span>{" "}
         </h4>
 
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <PhoneIcon className="text-[#815af5] h-7 w-7 animate-pulse" />
             <p className="text-2xl">+14702659368</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <MapPinIcon className="text-[#815af5] h-7 w-7 animate-pulse" />
             <p className="text-2xl">Atlanta, GA</p>
           </div>
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <EnvelopeIcon className="text-[#815af5] h-7 w-7 animate-pulse" />
             <p className="text-2xl">nadario.adj@gmail.com</p>
           </div>{" "}
         </div>
@@ -84,7 +86,7 @@ function ContactMe({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+            className="bg-[#815af5] py-5 px-10 rounded-md text-black font-bold text-lg"
           >
             Submit
           </button>
