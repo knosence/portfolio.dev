@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import WorkExperience from "@/components/WorkExperience";
-import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import logo from "../public/images/Rf7eda97de5d2afb34651b658c84adf91(3).png";
@@ -25,8 +24,7 @@ export default function Home() {
       z-0 
       scrollbar-thin
       scrollbar-track-gray-400/20 
-      scrollbar-thumb-[#815af5]/80
-      "
+      scrollbar-thumb-[#815af5]/80"
     >
       <Head>
         <title>NaDario&apos;s Portfolio</title>
